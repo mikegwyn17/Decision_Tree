@@ -1,4 +1,5 @@
 #include "Decision_Tree.h"
+#inlcude <limits>
 
 using namespace std;
 
@@ -32,7 +33,10 @@ int main (void)
 		if (event == "quit")
 			cont = false;
 	}
-	system("pause");
+	cout << "Press ENTER to continue...";
+  	cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
+
+  return 0;
 
 	return 0;
 }
